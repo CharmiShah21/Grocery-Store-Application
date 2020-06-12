@@ -1,0 +1,34 @@
+﻿@model IEnumerable<GroceryStoreApplication.Models.ApplicationModel.Brand>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Our Brands</h2>
+<p>We believe in our brands. They are easy to use and have great quality and taste</p>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { },  new { @class = "btn btn-primary" })
+</p>
+<table class="table table-bordered">
+    <tr>
+        <th>
+            Brands
+        </th>
+        <th>Actions</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrandName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.BrandId }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Details", "Details", new { id = item.BrandId }, new { @class = "btn btn-default"})
+            @Html.ActionLink("Delete", "Delete", new { id = item.BrandId }, new { @class = "btn btn-danger" } )
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<GroceryStoreApplication.Models.ApplicationModel.Product>
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Products</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { }, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Brand.BrandName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.CategoryDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductDescription)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Brand.BrandName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.CategoryDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductDescription)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Details", "Details", new { id = item.ProductId }, new { @class = "btn btn-default"})
+            @Html.ActionLink("Delete", "Delete", new { id = item.ProductId }, new { @class = "btn btn-danger" } )
+        </td>
+    </tr>
+}
+
+</table>
