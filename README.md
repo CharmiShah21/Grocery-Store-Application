@@ -24,6 +24,7 @@ accessing all the methods of superclass.
 
 ### Web Pages
 <img src="https://github.com/CharmiShah21/Assignment1-CHARMI/blob/master/screenshots/home.PNG">
+<img src="https://github.com/CharmiShah21/Assignment1-CHARMI/blob/master/screenshots/Aboutus.PNG">
 <img src="https://github.com/CharmiShah21/Assignment1-CHARMI/blob/master/screenshots/brand.PNG">
 <img src="https://github.com/CharmiShah21/Assignment1-CHARMI/blob/master/screenshots/Products.PNG">
 <img src="https://github.com/CharmiShah21/Assignment1-CHARMI/blob/master/screenshots/categeory.PNG">
