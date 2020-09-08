@@ -1,4 +1,4 @@
-# Indian Grocery Store - Assignment 1
+# Indian Grocery Store 
 
 ### Reason to select
 Nowadays due to covid-19 many people are facing issues in their daily grocery shopping.
